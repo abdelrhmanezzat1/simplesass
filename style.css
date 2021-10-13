@@ -1,0 +1,117 @@
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.showcase-content .btn-1, .showcase-content .btn-2 {
+  font-weight: bold;
+  margin: 10px 5px;
+  padding: 10px 15px;
+  border-radius: 9px;
+  text-align: center;
+  color: #43474d;
+}
+
+a {
+  text-decoration: none;
+}
+
+.showcase {
+  background-color: #967676;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  height: 500px;
+}
+
+.showcase .logo {
+  color: #0c090a;
+  font-size: 30px;
+}
+
+.showcase nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.showcase nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.showcase nav ul li {
+  padding: 15px;
+}
+
+.showcase nav ul li a {
+  text-decoration: none;
+  color: #0c090a;
+  padding: 10px 15px;
+}
+
+.showcase nav ul li a:hover {
+  background-color: #eee;
+  color: rgba(238, 188, 238, 0.933);
+  border-radius: 9px;
+}
+
+.showcase-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.showcase-content img {
+  max-width: 50%;
+}
+
+.showcase-content h1 {
+  text-align: center;
+  color: #eee;
+  font-weight: bold;
+}
+
+.showcase-content p {
+  text-align: center;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.showcase-content .btn-1 {
+  background: rgba(238, 188, 238, 0.933);
+  color: #967676;
+}
+
+.showcase-content .btn-2 {
+  background: rgba(248, 229, 248, 0.933);
+  color: #967676;
+}
+/*# sourceMappingURL=style.css.map */

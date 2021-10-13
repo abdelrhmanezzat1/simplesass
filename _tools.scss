@@ -1,0 +1,19 @@
+$min-color: rgba(238, 188, 238, 0.933);
+$font-color: #eee;
+$heading-color: #0c090a;
+$hover-color: #43474d;
+$min-font: Helvetica, sans-serif;
+$font-w: bold;
+$font-s: 30px;
+
+@function change($co) {
+  @if (lightness($co) > 60) {
+    @return rgb(150, 118, 118);
+  } @else {
+    @return #fefe;
+  }
+}
+@mixin change2($ct) {
+  background: $ct;
+  color: change($ct);
+}

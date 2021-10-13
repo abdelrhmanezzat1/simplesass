@@ -1,0 +1,73 @@
+@import "tools";
+@import "const";
+%btn {
+  font-weight: $font-w;
+  margin: 10px 5px;
+  padding: 10px 15px;
+  border-radius: 9px;
+  text-align: center;
+  color: $hover-color;
+}
+a {
+  text-decoration: none;
+}
+.showcase {
+  background-color: change($min-color);
+  font-family: $min-font;
+  font-weight: $font-w;
+  height: 500px;
+  .logo {
+    color: $heading-color;
+    font-size: $font-s;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        padding: 15px;
+        a {
+          text-decoration: none;
+          color: $heading-color;
+          padding: 10px 15px;
+          &:hover {
+            background-color: $font-color;
+            color: $min-color;
+            border-radius: 9px;
+          }
+        }
+      }
+    }
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    img {
+      max-width: 50%;
+    }
+    h1 {
+      text-align: center;
+      color: $font-color;
+      font-weight: bold;
+    }
+    p {
+      text-align: center;
+      line-height: 2rem;
+      font-weight: $font-w;
+    }
+    .btn-1 {
+      @extend %btn;
+      @include change2($min-color);
+    }
+    .btn-2 {
+      @extend %btn;
+      @include change2(lighten($min-color, 10%));
+    }
+  }
+}
